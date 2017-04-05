@@ -11,5 +11,5 @@ SOLR_PORT=8983
 cd ${SOLR_BIN}
 . ./solr start -cloud -p ${SOLR_PORT} -s "/opt/temp/solrdata/node1" -z "localhost:2181,localhost:2182,localhost:2183"
 
-cd ${SOLR_CLOUD_SCRIPTS}
-. ./zkcli.sh -zkhost localhost:2181 -cmd upconfig -confdir "/opt/temp/conf" -confname default
+#cd ${SOLR_CLOUD_SCRIPTS}
+#. ./zkcli.sh -zkhost localhost:2181 -cmd upconfig -confdir "/opt/temp/conf" -confname default
